@@ -29,6 +29,10 @@ Initial `app-ads.txt` SHA-256:
 
 ## Editing and deployment
 
+The website opens in English. The EN / 中文 control switches all page navigation and studio content, remembers the visitor's choice locally, and supports shareable `?lang=en` and `?lang=zh` links. Original policy bodies remain in English. The advertising files remain publicly crawlable at their existing root URLs, with no links in the website navigation or footer.
+
+Localized text uses `data-i18n` keys in the HTML and paired Chinese/English values in `i18n.js`. Keep the default English HTML and both catalog values synchronized when editing text. Deploy the five HTML pages and shared scripts together when changing translation keys.
+
 Update the HTML, `style.css`, `script.js`, or image files, then commit to `main`. GitHub Pages publishes the new commit. Keep the custom domain set to `www.dreamstonevr.com` in repository Settings → Pages.
 
 The contact form creates a mail draft in the visitor's own email application. It does not store or send messages from a server. The site does not install analytics or advertising cookies.

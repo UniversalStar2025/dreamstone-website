@@ -40,7 +40,7 @@ dialog?.addEventListener('click',e=>{if(e.target===dialog){const rect=dialog.get
 
 let emailDraftPrepared=false;
 function updateContactStatus(){
-  if(emailDraftPrepared)document.querySelector('#contact-status').textContent=localized('Your email draft is ready. Review and send it in your email app. If the app did not open, contact zhuning@dreamstonevr.com directly.','邮件草稿已准备好，请在邮件应用中确认并发送。若邮件应用未打开，可直接联系 zhuning@dreamstonevr.com。');
+  if(emailDraftPrepared)document.querySelector('#contact-status').textContent=localized('Your email draft is ready. Review and send it in your email app. If the app did not open, contact brucezhu99@gmail.com directly.','邮件草稿已准备好，请在邮件应用中确认并发送。若邮件应用未打开，可直接联系 brucezhu99@gmail.com。');
 }
 document.addEventListener('dreamstone:languagechange',updateContactStatus);
 document.querySelector('#contact-form')?.addEventListener('submit',e=>{
@@ -50,7 +50,7 @@ document.querySelector('#contact-form')?.addEventListener('submit',e=>{
   const subject=encodeURIComponent(localized(`Website inquiry · ${name}`,`官网合作咨询 · ${name}`));
   const body=encodeURIComponent(localized(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,`名字：${name}\n邮箱：${email}\n\n留言：\n${message}`));
   emailDraftPrepared=true;updateContactStatus();
-  window.location.href=`mailto:zhuning@dreamstonevr.com?subject=${subject}&body=${body}`;
+  window.location.href=`mailto:brucezhu99@gmail.com?subject=${subject}&body=${body}`;
 });
 
 // Preserve previously shared Strikingly section hashes as well as the new navigation.
